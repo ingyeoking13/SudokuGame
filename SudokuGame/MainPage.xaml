@@ -9,6 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="{ThemeResource SystemControlAccentAcrylicElementAccentMediumHighBrush}"/>
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <AcrylicBrush TintColor="#CCFFFF00" TintOpacity="0.5"/>
+            </Grid.Background>
+        </Grid>
     </Grid>
 </Page>
